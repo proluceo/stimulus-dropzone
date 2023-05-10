@@ -1,6 +1,8 @@
 import { Controller } from "@hotwired/stimulus";
 import "@kanety/stimulus-static-actions";
 import Dropzone from "dropzone";
+import sheet from "./style.css" assert { type: "css" };
+document.adoptedStyleSheets = [sheet];
 
 export default class extends Controller {
   // For a list of all possible options, refer to https://github.com/dropzone/dropzone/blob/main/src/options.js
